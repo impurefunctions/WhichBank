@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="36dp"
+    tools:context="bw.co.whichbank.activities.HomeActivity"
+    tools:showIn="@layout/activity_home"
+    android:overScrollMode="ifContentScrolls"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtPersonfName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/hint_text_size_login" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtPersonLName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/hint_text_size_login" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtOccupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/occupation"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/hint_text_size_login" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtEmployer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/employer"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/hint_text_size_login" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtMonthlyIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/monthly_income"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/hint_text_size_login" />
+        <com.crystal.crystalrangeseekbar.widgets.BubbleThumbSeekbar
+            android:id="@+id/seekBar_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            app:bar_color="#C69E89"
+            app:bar_highlight_color="#A54B17"
+            app:corner_radius="10"
+            app:data_type="_integer"
+            app:left_thumb_color="#775E4F"
+            app:left_thumb_color_pressed="#4C2D1A"
+            app:max_value="600000"
+            app:min_value="2000"
+            app:steps="150" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/hint_text_size_login" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+
+        <TextView
+            android:id="@+id/edtEmpNature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/government_or_private"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/hint_text_size_login" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/group_empNature">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_gov"
+                android:text="@string/radio_government"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_prv"
+                android:text="@string/radio_private"/>
+        </RadioGroup>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+
+        <TextView
+            android:id="@+id/edtContract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If Employed, Contract / Permanent"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/hint_text_size_login" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/group_empContract">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_perm"
+                android:text="@string/permanent_emp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_contract"
+                android:text="@string/contract_emp"/>
+        </RadioGroup>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="album_title_padding">10dp</dimen>
+
+
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="slide_title">30sp</dimen>
+    <dimen name="slide_desc">16sp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+    <dimen name="icon_top_margin">24dp</dimen>
+    <dimen name="icon_bottom_margin">24dp</dimen>
+    <dimen name="field_width_standard">160dp</dimen>
+
+    <dimen name="standard_field_width">160dp</dimen>
+    <dimen name="margin_1">8dp</dimen>
+    <dimen name="margin_2">16dp</dimen>
+
+    <dimen name="bottom_bar_elevation">8dp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="radius_button">25dp</dimen>
+    <dimen name="hint_text_size_login">15sp</dimen>
+    <dimen name="clickable_text_padding">10sp</dimen>
+    <dimen name="card_view_padding">15dp</dimen>
+    <dimen name="cardview_margin">7dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

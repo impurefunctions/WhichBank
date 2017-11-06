@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/helloClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Well Hello there," />
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/textInputLayout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtLoanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="How much do you want to borrow?"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/hint_text_size_login" />
+        <com.crystal.crystalrangeseekbar.widgets.BubbleThumbSeekbar
+            android:id="@+id/seekBar_loan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            app:bar_color="#C69E89"
+            app:bar_highlight_color="#A54B17"
+            app:corner_radius="10"
+            app:data_type="_integer"
+            app:left_thumb_color="#775E4F"
+            app:left_thumb_color_pressed="#4C2D1A"
+            app:max_value="450000"
+            app:min_value="100000"
+            app:steps="10000" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtLoanDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="For how long?"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/hint_text_size_login" />
+        <com.crystal.crystalrangeseekbar.widgets.BubbleThumbSeekbar
+            android:id="@+id/seekBar_loan_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            app:bar_color="#C69E89"
+            app:bar_highlight_color="#A54B17"
+            app:corner_radius="10"
+            app:data_type="_integer"
+            app:left_thumb_color="#775E4F"
+            app:left_thumb_color_pressed="#4C2D1A"
+            app:max_value="7"
+            app:min_value="3"
+            app:steps="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Which Bank do you use?"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/hint_text_size_login" />
+
+        <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:id="@+id/spinner_bank">
+
+    </Spinner>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+</LinearLayout>
